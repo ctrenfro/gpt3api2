@@ -1,0 +1,39 @@
+h3 {
+  justify-content: center;
+}
+
+p {
+  width: 100%;
+}
+
+.repItem {
+  background-color: #004573;
+  max-width: 60%;
+  margin: 10px auto;
+  border-radius: 25px;
+  padding: 0.1em;
+}
+
+.top {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.bottom {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.left {
+  width: 50%;
+  text-align: left;
+  display: inline-block;
+  text-align: center;
+}
+
+.right {
+  width: 50%;
+  text-align: right;
+  display: inline-block;
+  text-align: center;
+}
