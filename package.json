@@ -9,5 +9,20 @@
   "scripts": {
     "heroku-postbuild": "cd client && npm install && npm install --only-dev --no-shrinkwrap && npm run build",
     "start": "node api.js"
-  }
+  },
+  "name": "openaigpt3",
+  "version": "1.0.0",
+  "description": "Nodejs app for \"client\" frontend app",
+  "main": "api.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ctrenfro/gpt3api2.git"
+  },
+  "author": "Christopher Renfro",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ctrenfro/gpt3api2/issues"
+  },
+  "homepage": "https://github.com/ctrenfro/gpt3api2#readme"
 }

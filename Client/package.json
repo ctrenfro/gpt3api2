@@ -1,7 +1,7 @@
 {
   "name": "client",
   "version": "0.1.0",
-  "homepage": "https://ctrenfro.github.io/GPT3/",
+  "homepage": "https://gpt3api2.herokuapp.com/",
   "private": true,
   "dependencies": {
     "@babel/runtime": "^7.18.3",
@@ -21,7 +21,6 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start:backend": "cd backend && nodemon api.js",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
