@@ -2,12 +2,19 @@ const PORT = 8000;
 const express = require("express");
 const cors = require("cors");
 const axios = require("axios");
-
+const path = require("path");
 require("dotenv").config();
 
 const app = express();
 
 app.use(cors());
+
+if (process.env.NODE_ENV === "production") {
+  app.use(express.static("build"));
+  app.get("*", (req, res) => {
+    req.sendFile(path.resolve(__dirname, "build", "index.html"));
+  });
+}
 
 app.get("/new", (req, res) => {
   const engine = req.query.engine;

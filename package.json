@@ -3,6 +3,11 @@
     "axios": "^0.27.2",
     "cors": "^2.8.5",
     "dotenv": "^16.0.1",
-    "express": "^4.18.1"
+    "express": "^4.18.1",
+    "path": "^0.12.7"
+  },
+  "scripts": {
+    "heroku-postbuild": "cd client && npm install && npm install --only-dev --no-shrinkwrap && npm run build",
+    "start": "node api.js"
   }
 }
